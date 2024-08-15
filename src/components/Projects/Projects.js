@@ -13,6 +13,8 @@ import ewip from "../../Assets/Projects/ewip.png";
 import reqComponents from "../../Assets/Projects/reqComponents.png";
 import leadReceive from "../../Assets/Projects/leadReceive.png";
 import cellCheckingLithiumPositioning from "../../Assets/Projects/cellCheckingLithiumPositioning.png";
+import apiDocs from "../../Assets/Projects/apiDocs.png";
+import carZone from "../../Assets/Projects/carZone.png";
 
 function Projects() {
   return (
@@ -26,6 +28,26 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={carZone}
+              isGithub={true}
+              title="Car Zone"
+              description="E-Commerce buy new or second car build with Next JS and Tool Shadcn UI. Have features to see available cars, Buy Car, Master data for admin like car, type car, user etc, create invoice and download invoice."
+              glLink="https://github.com/RayhanPJ/fe-car-zone.git"
+              demoLink="https://fe-car-zone.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={apiDocs}
+              isGithub={true}
+              title="API Documentation Car Zone"
+              description="API Documentation for Car Zone build with Golang using Gin and Gorm for framework. Have features to CRUD 8 table (Car, Type Car, Brand Car, Invoice, Transacition, Order, User, Role), using JWT auth, and protect route with role."
+              glLink="https://github.com/RayhanPJ/be-car-zone.git"
+              demoLink="https://api-car-zone.vercel.app/swagger/index.html"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={dashboardIncomming}
