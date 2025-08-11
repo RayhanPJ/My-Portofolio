@@ -14,14 +14,14 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.glLink} target="_blank">
+        <Button variant="primary" href={props.repoLink} target="_blank">
           {props.isGithub ? (
             <>
-              <BsGithub /> &nbsp; Git Hub
+              <BsGithub /> &nbsp; GitHub
             </>
           ) : (
             <>
-              <AiFillGitlab /> &nbsp; Git Lab
+              <AiFillGitlab /> &nbsp; GitLab
             </>
           )}
         </Button>
